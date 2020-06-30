@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 50px;
+    padding: 0;
+    margin: 20px 0;
+
+}
+
+.logo {
+    
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    margin: 0;
+    border-radius: 50px;
+    display: flex;
+} 
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo h2{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.links{
+    margin-left: 300px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.links a{
+    font-size: 30px;
+    padding: 0 15px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.links p {
+    font-size: 40px;
+}
+
+.links a:hover{
+    font-weight: bold;
+    background-color: rgb(61, 150, 49);
+    border-radius: 20px;
+    
+}
+
+/*=== WRAPPER ===*/
+
+#wrapper{
+    display: flex;
+    max-width: 940px;
+    height: 366px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+#wrapper .info{
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 117px;
+    margin-left: 60px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    text-align: center;
+    width: 320px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#wrapper .info h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#wrapper .info p{
+    margin-top: 10px;
+    width: 316px;
+    height: 84px;
+    font-size: 18px;
+    color:#fff;
+}
+
+.img_back{
+    width: 100%;
+    height: 100%px;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+
+.img_chef{
+    position: absolute;
+    margin-top: 66px;
+    margin-right: 50px;
+    margin-left: 600px;
+}
+
+
+
+/* === CARDS === */
+
+#title{
+    margin: 15px auto;
+    width: 300px;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+.cards{
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.card_image img{
+    padding: 5px;
+    width: 280px;
+    height: 140px;
+    border-radius: 15px;
+    
+}
+
+.card_image img:hover{
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.card_info{
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.card_info .nome{
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
+.card_info .chef{
+    font-size: 14px;
+    color: #777777
+}
+.card_image:hover{
+    cursor: pointer;
+   
+}
+
+/* ---------------------------- */
+
+footer{
+    margin-top: 50px;
+    height: 70px;
+    background-color: #bddbb5d5;    
+    position: relative;
+}
+
+footer p{
+    font-size: 14px;
+    line-height: 6.5vh;
+    text-align: center;
+    color: #030303;
+    padding: 15px;
+   
+}
+
+/* ------------------------------- */
+nav{
+    background-color: rgba(255, 255, 255, 0.493);
+    font-family: 'Permanent Marker', cursive;
+    border-radius:30px ;
+    padding: 10px;
+    margin-top: 30px;
+}
+div.sobre{
+    max-width: 930px;
+    margin: 0 auto;
+    line-height: 28px;
+}
+
+.sobre h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+div.comeco{
+    max-width: 930px;
+    margin: 30px auto 0;
+    line-height: 28px;
+}
+
+.comeco h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+div.nossasReceitas{
+    max-width: 930px;
+    margin: 30px auto 0;
+    line-height: 28px;
+}
+.nossasReceitas h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* === pagina de receitas  === */
+
+.container_conteudo-receita{
+    max-width: 940px;
+    margin:  0 auto; 
+    font-family: 'Permanent Marker', cursive;
+}
+
+.conteudo-receita img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+
+.receita_igredientes_preparo{
+    margin-top: 32px;
+    padding: 0 10px;
+}
+
+/* ---------------------------- */
+
+.not-found_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}

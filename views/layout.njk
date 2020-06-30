@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foodfy</title>
+        <link rel="stylesheet" href="estilos/index_style.css">
+    </head> 
+
+    <body>
+        
+        <div class="container">
+            
+            <header>
+                <div class="logo">
+                    <img class="logo_img"  src="img/logo.png" alt="">
+                    <a href="/">
+                        <h2>Foodfy</h2>
+                    </a>
+                </div>
+
+                <div class = "links">
+                    <a href="/">Início</a> 
+                    <p > | </p>
+                    <a href="/sobre">Sobre</a> 
+                    <p > | </p>
+                    <a href="/receitas">Receitas</a>
+                </div>
+            </header>
+
+            {% block content %}
+            {% endblock %}
+
+        </div>
+
+         <footer>
+            <p>Foodfy - Desenvolvido por: Janiele Nogueira | &copy 2020 - Todos os direitos reservados</p>
+        </footer>
+            
+    </body>
+</html>

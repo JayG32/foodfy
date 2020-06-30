@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <section class="cards">
+        {% for item in items %}
+        <div class="card" id="{{item.id}}">
+            <div class="card_image">
+                <img src="{{item.imagem}}" alt="burguer" title="Foto de {{item.nome}}">
+            </div>
+            
+            <div class="card_info">
+                <p class="nome">{{item.nome}}</p>
+                <p class="chef">
+                    <a class="chef_url" href="{{item.chef_url}}" target="_blank">{{item.chef}}</a>
+                </p>
+            </div>
+
+        </div>
+        {% endfor %}
+    </section>
+   
+    <script src="scripts/receita_script.js"></script>
+{%endblock%}

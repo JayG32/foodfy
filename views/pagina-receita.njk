@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block content%}
+
+    <div class="container_conteudo-receita">
+        <div class="conteudo-receita">
+
+            <div class="conteudo-receita_image">
+                <img src="{{item.imagem}}">
+            </div>
+
+            <div class="conteudo-receita_texto">
+                <h1 class="nome">{{item.nome}}</h1>
+                <p class="chef">{{item.chef}}</p>
+                 
+            </div>
+
+            <div class="receita_igredientes_preparo">
+                <h4>ingredientes</h4>
+                <p>{{item.ingredientes}}</p>
+                <br />
+                <h4>Modo de preparo</h4>
+                <p>{{item.preparo}}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}
